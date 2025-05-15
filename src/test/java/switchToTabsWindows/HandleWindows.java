@@ -33,14 +33,22 @@ public class HandleWindows {
 		
 		List<String> allWindowsAsList = new ArrayList<String>(all_windows);
 		driver.switchTo().window(allWindowsAsList.get(1));
+		System.out.println("Title of the first window: " + driver.getTitle());
+		System.out.println("URL of the first window: " + driver.getCurrentUrl());
 		Thread.sleep(2000);
 		driver.switchTo().window(allWindowsAsList.get(2));
+		System.out.println("Title of the first window: " + driver.getTitle());
+		System.out.println("URL of the first window: " + driver.getCurrentUrl());
 		Thread.sleep(2000);
 		driver.switchTo().window(allWindowsAsList.get(3));
+		System.out.println("Title of the first window: " + driver.getTitle());
+		System.out.println("URL of the first window: " + driver.getCurrentUrl());
 		Thread.sleep(2000);
 		driver.switchTo().window(allWindowsAsList.get(4));
 		Thread.sleep(2000);
 		driver.switchTo().window(allWindowsAsList.get(5));
+		System.out.println("Title of the first window: " + driver.getTitle());
+		System.out.println("URL of the first window: " + driver.getCurrentUrl());
 	}
 
 }
